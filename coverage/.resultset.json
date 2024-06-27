@@ -215,6 +215,9 @@
       "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/config/routes.rb": {
         "lines": [
           1,
+          1,
+          null,
+          null,
           null,
           null,
           null,
@@ -224,7 +227,8 @@
           1,
           1,
           null,
-          null,
+          1,
+          1,
           null,
           null,
           null
@@ -408,15 +412,9 @@
           null,
           null,
           1,
-          2,
-          2,
-          null,
-          null,
-          1,
           null,
           1,
           4,
-          null,
           null,
           null
         ]
@@ -462,8 +460,18 @@
           1,
           null
         ]
+      },
+      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/app/controllers/api/v1/customers/subscriptions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1719427242
+    "timestamp": 1719501253
   }
 }

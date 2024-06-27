@@ -24,15 +24,9 @@ class Api::V1::SubscriptionsController < ApplicationController
     render json: { errors: "Couldn't find Subscription" }, status: :not_found
   end
 
-  def index
-    subscriptions = Subscription.where(customer_id: params[:customer_id])
-    render json: SubscriptionSerializer.new(subscriptions).serializable_hash.to_json
-  end
-
   private
 
   def subscription_params
     params.require(:subscription).permit(:title, :price, :status, :frequency, :customer_id, :tea_id)
   end
-
 end

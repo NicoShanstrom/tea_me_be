@@ -78,7 +78,7 @@ RSpec.describe 'API V1 Subscriptions', type: :request do
 
   describe 'GET /api/v1/subscriptions' do
     context 'when the customer has subscriptions' do
-      before { get "/api/v1/subscriptions", params: { customer_id: customer.id } }
+      before { get "/api/v1/customers/#{customer.id}/subscriptions" }
 
       it 'returns all subscriptions for the customer' do
         expect(response).to have_http_status(200)
@@ -91,7 +91,7 @@ RSpec.describe 'API V1 Subscriptions', type: :request do
     context 'when the customer has no subscriptions' do
       let!(:new_customer) { create(:customer) }
 
-      before { get "/api/v1/subscriptions", params: { customer_id: new_customer.id } }
+      before { get "/api/v1/customers/#{new_customer.id}/subscriptions" }
 
       it 'returns an empty array' do
         expect(response).to have_http_status(200)
