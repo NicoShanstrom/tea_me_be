@@ -9,7 +9,7 @@
 - **Rails**: 7.1.3.4
 
 ### Installation
-1. Clone the repo to your machine:
+1. Fork then Clone the repo to your machine:
     ```sh
     git clone <github_repo_url>
     cd <repo_directory>
