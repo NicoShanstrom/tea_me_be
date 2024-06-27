@@ -8,11 +8,10 @@ Rails.application.routes.draw do
   # root "posts#index"
   namespace :api do
     namespace :v1 do
-      resources :customers, only: [:create, :destroy] do
+      resources :customers, only: [] do
         resources :subscriptions, only: [:index], module: :customers
       end
       resources :subscriptions, only: [:create, :destroy, :show]
-      resources :teas, only: [:create, :destroy]
     end
   end
 end

@@ -48,7 +48,8 @@ RSpec.describe 'API V1 Subscriptions', type: :request do
       before { delete "/api/v1/subscriptions/#{subscription1.id}" }
 
       it 'cancels the subscription' do
-        expect(response).to have_http_status(204)
+        expect(response).to have_http_status(200)
+        expect(json['message']).to eq("Subscription canceled successfully")
         expect(subscription1.reload.status).to eq(1)
       end
     end

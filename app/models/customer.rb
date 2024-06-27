@@ -3,7 +3,7 @@ class Customer < ApplicationRecord
 
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :email, presence: true, uniqueness: { case_sensitive: false }
+  validates :email, presence: true, uniqueness: true 
   validates :address, presence: true
 
   before_save :downcase_email
@@ -11,7 +11,7 @@ class Customer < ApplicationRecord
   private
     
   def downcase_email
-    self.email = email.downcase if email.present?
+    self.email = email.downcase
   end
 end
 

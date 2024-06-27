@@ -12,7 +12,7 @@ class Api::V1::SubscriptionsController < ApplicationController
   def destroy
     subscription = Subscription.find(params[:id])
     subscription.update(status: 1)
-    head :no_content
+    render json: { message: "Subscription canceled successfully" }, status: :ok
   rescue ActiveRecord::RecordNotFound
     render json: { errors: "Couldn't find Subscription" }, status: :not_found
   end
