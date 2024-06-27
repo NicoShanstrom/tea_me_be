@@ -65,7 +65,7 @@
 - **Example URL**: `http://localhost:3000/api/v1/customers/1/subscriptions`
 
 ## Future Addition Ideas
-- Consume this API for tea product information: **Spoontacular API**
+- Consume this API for tea product information: [Spoontacular API](https://spoonacular.com/food-api/docs)
 - Create `CustomersController` and `TeasController` with CRUD actions
 - Create user or admin for accessibility by a user or admin
 - Create API keys for a user or admin of this API when a user or admin is created
