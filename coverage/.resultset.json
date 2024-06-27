@@ -251,6 +251,50 @@
           null
         ]
       },
+      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/spec/models/customer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/app/models/customer.rb": {
         "lines": [
           1,
@@ -266,7 +310,7 @@
           1,
           null,
           1,
-          10,
+          12,
           null,
           null,
           null
@@ -279,8 +323,31 @@
           null
         ]
       },
-      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/app/models/tea.rb": {
+      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/spec/models/subscription_spec.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/app/models/subscription.rb": {
+        "lines": [
+          1,
           1,
           1,
           null,
@@ -292,9 +359,26 @@
           null
         ]
       },
-      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/app/models/subscription.rb": {
+      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/spec/models/tea_spec.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/nicoshanstrom/Turing/4mod/prework/tea_me_be/app/models/tea.rb": {
+        "lines": [
           1,
           1,
           null,
@@ -395,6 +479,6 @@
         ]
       }
     },
-    "timestamp": 1719507256
+    "timestamp": 1719507589
   }
 }
