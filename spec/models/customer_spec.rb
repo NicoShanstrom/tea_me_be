@@ -27,7 +27,6 @@ RSpec.describe Customer, type: :model do
 
       expect(customer).not_to be_valid
       expect(customer.errors[:email]).to include('has already been taken')
-      # require 'pry'; binding.pry
     end
   end
 
