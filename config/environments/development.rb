@@ -1,8 +1,19 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
-  config.hosts << 'www.example.com'
-  config.hosts << 'localhost'
+  # config.hosts << 'www.example.com'
+  # config.hosts << 'localhost'
+  # Allow requests from specific hosts
+  config.hosts << "localhost"
+  config.hosts << "127.0.0.1"
+  config.hosts << /.*\.example\.com/  # Allow subdomains of example.com
+  config.hosts << "www.example.com"
+  config.hosts << ".example.com"  # Allow subdomains of example.com
+
+  # Optionally exclude specific paths from host authorization checks
+  config.host_authorization = {
+    exclude: ->(request) { request.path.include?('healthcheck') }
+  }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
