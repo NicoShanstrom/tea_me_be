@@ -3,6 +3,7 @@ require "spec_helper"
 require "simplecov"
 SimpleCov.start
 
+# ENV['RAILS_ENV'] = 'test'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
@@ -79,13 +80,11 @@ RSpec.configure do |config|
   config.formatter = :documentation
 end
 
-# require("./spec/support/factory_bot")
-
-VCR.configure do |config|
-  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  config.hook_into :webmock
-  # config.filter_sensitive_data('<API_NAME>') { Rails.application.credentials.API_NAME[:API_KEY] }
-  config.configure_rspec_metadata!
-  config.allow_http_connections_when_no_cassette = true
-end
+# VCR.configure do |config|
+#   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+#   config.hook_into :webmock
+#   # config.filter_sensitive_data('<API_NAME>') { Rails.application.credentials.API_NAME[:API_KEY] }
+#   config.configure_rspec_metadata!
+#   config.allow_http_connections_when_no_cassette = true
+# end
 # Dir[Rails.root.join('spec/support/**/*.rb')].sort.each { |file| require file }
